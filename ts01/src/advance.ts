@@ -104,4 +104,4 @@ const cars : Cars = { make : "Toyota", model : "Highlander" };
 
 cars.model = "Camry";
 console.log(cars);
-// cars.make = "Benz" // Invalid cos it is a readonly property  
+// cars.make = "Benz" // Invalid cos it is a readonly property
