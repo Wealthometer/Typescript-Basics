@@ -105,3 +105,18 @@ const cars : Cars = { make : "Toyota", model : "Highlander" };
 cars.model = "Camry";
 console.log(cars);
 // cars.make = "Benz" // Invalid cos it is a readonly property
+
+// • Index Signatures
+// Index signatures allow you to define the structure of dynamic properties in an object.
+
+interface StringMap {
+    [key : string] : string
+}
+
+const translations : StringMap = {
+    hello : "Hola",
+    world : "Mundo"
+}
+
+console.log(translations.hello);
+console.log(translations.world);
