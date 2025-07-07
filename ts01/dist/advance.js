@@ -32,3 +32,7 @@ console.log(products);
 const config = {};
 config.timeout = (_a = config.timeout) !== null && _a !== void 0 ? _a : 500;
 console.log(config.timeout);
+const cars = { make: "Toyota", model: "Highlander" };
+cars.model = "Camry";
+console.log(cars);
+// cars.make = "Benz" // Invalid cos it is a readonly property
