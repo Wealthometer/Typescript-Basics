@@ -89,4 +89,19 @@ interface Config {
 
 const config : Config = {};
 config.timeout = config.timeout ?? 500;
-console.log(config.timeout); 
+console.log(config.timeout);
+
+// • Readonly and Index Signatures
+// • The readonly modifier ensures that property can't be modified after initialization
+
+interface Cars {
+    readonly make : string;
+    model : string
+}
+
+const cars : Cars = { make : "Toyota", model : "Highlander" };
+
+
+cars.model = "Camry";
+console.log(cars);
+// cars.make = "Benz" // Invalid cos it is a readonly property
