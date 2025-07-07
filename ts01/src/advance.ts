@@ -89,4 +89,4 @@ interface Config {
 
 const config : Config = {};
 config.timeout = config.timeout ?? 500;
-console.log(config.timeout); 
+console.log(config.timeout);
