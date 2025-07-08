@@ -41,3 +41,37 @@ const translations = {
 };
 console.log(translations.hello);
 console.log(translations.world);
+const scores = {
+    math: 95,
+    science: 90
+};
+console.log(scores);
+// • Literal Types
+// Literal types allow a variable to have a specific set of values.
+// String and Numeric Literals
+let direction;
+direction = "North";
+console.log(direction);
+direction = "South";
+console.log(direction);
+direction = "East";
+console.log(direction);
+direction = "West";
+console.log(direction);
+// • Literal Types In Functions
+// literal types are useful for creating safer APIs
+function respond(action) {
+    if (action === "Start") {
+        return "Starting......";
+    }
+    else {
+        return "Stopping......";
+    }
+}
+console.log(respond("Start"));
+console.log(respond("Stop"));
+const btn = {
+    label: "Submit",
+    size: "medium"
+};
+console.log(btn);
